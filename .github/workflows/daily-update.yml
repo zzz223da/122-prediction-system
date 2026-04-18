@@ -1,3 +1,4 @@
+# .github/workflows/daily-update.yml
 name: Daily Prediction Update
 
 on:
@@ -17,28 +18,37 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
+      # --- 新增部分开始 ---
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch latest ELO scores
+        run: python fetch_elo.py
+      # --- 新增部分结束 ---
+
+      - name: Install Node.js dependencies
         run: npm install
 
       - name: Run prediction script
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
-          APIFY_API_KEY: ${{ secrets.APIFY_API_KEY }}
-          BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+          ...
         run: node update.js
 
       - name: Backup previous data
         run: |
           mkdir -p backup
           if [ -f data.json ]; then cp data.json backup/data_$(date +%Y%m%d).json; fi
-          if [ -f elo.json ]; then cp elo.json backup/elo_$(date +%Y%m%d).json; fi
+          if [ -f club_elo.json ]; then cp club_elo.json backup/club_elo_$(date +%Y%m%d).json; fi
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json elo.json accuracy.json
-          git commit -m "Auto update prediction data" || true
-          git push
+          git add data.json club_elo.json
+          git diff --quiet || (git commit -m "Auto update prediction data & ELO" && git push)
