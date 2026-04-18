@@ -1,7 +1,17 @@
 {
   "name": "122-football",
   "version": "1.0.0",
+  "description": "Football prediction with ELO and Poisson model",
+  "main": "update.js",
+  "scripts": {
+    "update": "node update.js",
+    "snapshot": "node snapshot.js",
+    "backtest": "node backtest.js"
+  },
   "dependencies": {
     "node-fetch": "^2.6.9"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
