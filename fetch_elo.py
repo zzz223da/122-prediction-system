@@ -1,29 +1,44 @@
 import json
-import scrapelo
 import pandas as pd
+import requests
 import time
+from datetime import datetime
+
+CLUBELO_CSV_URL = "http://api.clubelo.com/Clubs"
 
 def fetch_and_save_elo():
-    print("开始从 ClubElo.com 获取最新的全球 ELO 评分...")
+    print(f"开始从 {CLUBELO_CSV_URL} 获取最新的全球 ELO 评分...")
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            # 获取所有比赛的 ELO 数据
-            # 'World' 代表获取全球所有联赛的数据
-            all_teams_data = scrapelo.get_competition_elo('World')
+            # 下载 CSV 文件
+            response = requests.get(CLUBELO_CSV_URL, timeout=30)
+            response.raise_for_status()  # 检查请求是否成功
 
-            if not all_teams_data:
-                print("警告：未抓取到任何ELO数据。")
-                return
+            # 将 CSV 文本转换为 DataFrame
+            from io import StringIO
+            df = pd.read_csv(StringIO(response.text))
 
-            # 将抓取到的数据转换为 DataFrame
-            df = pd.DataFrame(all_teams_data)
-            # 以 'Club' 为索引，'ELO' 为值，构建字典
-            elo_dict = df.set_index('Club')['ELO'].to_dict()
+            # 过滤：只保留当前有效的记录（'To' 日期大于等于今天）
+            today_str = datetime.now().strftime('%Y-%m-%d')
+            latest_records = df[df['To'] >= today_str]
+
+            # 如果过滤后数据为空，则回退到取所有俱乐部的最后一条记录
+            if latest_records.empty:
+                print("警告：未找到有效期限的记录，将使用全部数据并按俱乐部去重。")
+                # 按俱乐部名称排序，取每个俱乐部的最后一条
+                df_sorted = df.sort_values('To', ascending=False)
+                latest_records = df_sorted.groupby('Club').first().reset_index()
+
+            # 构建俱乐部名称 -> ELO 评分的字典
+            elo_dict = dict(zip(latest_records['Club'], latest_records['Elo']))
 
             print(f"成功获取 {len(elo_dict)} 支球队的 ELO 评分。")
+
+            # 保存到文件
             with open('club_elo.json', 'w', encoding='utf-8') as f:
                 json.dump(elo_dict, f, ensure_ascii=False, indent=2)
+
             print("ELO 数据已更新并保存到 club_elo.json。")
             return
 
