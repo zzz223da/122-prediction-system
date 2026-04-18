@@ -1,12 +1,12 @@
-name: Daily Predict & Deploy to EdgeOne
+name: Daily Update & Deploy
 
 on:
   schedule:
     - cron: '0 2 * * *'   # UTC 2:00 = 北京时间 10:00
-  workflow_dispatch:       # 允许手动触发
+  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  update-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,23 +24,22 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python dependencies
-        run: pip install soccerdata pandas
+        run: pip install -r requirements.txt
 
       - name: Fetch latest ELO data
-        run: python scripts/fetch_elo.py
+        run: python fetch_elo.py
 
       - name: Install Node dependencies
         run: npm ci
 
-      - name: Run prediction script
+      - name: Run prediction update
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
-        run: node scripts/dailyPredict.js
+        run: node update.js
 
       - name: Deploy to EdgeOne Pages
         uses: edgeone-pages/actions@v1
         with:
           token: ${{ secrets.EDGEONE_API_TOKEN }}
-          directory: './public'
-          -0environment: 'production'
-          
+          directory: '.'
+          environment: 'production'
