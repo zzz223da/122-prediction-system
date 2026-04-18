@@ -4,15 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <title>122 足球预测 · 专业版</title>
+    
+    <!-- Chart.js 用于准确率趋势图 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
     <style>
-        /* 样式保持与之前一致，此处略，您直接复制之前完整的 index.html 样式部分即可 */
-        /* 关键：确保卡片内概率和准确率显示的 CSS 无误 */
+        /* ========== 深色模式变量 ========== */
+        :root {
+            --bg: #f5f7fa;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border: #eef2f6;
+            --header-bg: #ffffff;
+            --accent: #3b82f6;
+            --success: #059669;
+            --warning: #d97706;
+            --danger: #dc2626;
+            --ou: #7c3aed;
+        }
+        .dark {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+            --header-bg: #1e293b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
+        body { background: var(--bg); color: var(--text-primary); min-height: 100vh; display: flex; flex-direction: column; }
+        .app { max-width: 500px; margin: 0 auto; width: 100%; height: 100vh; display: flex; flex-direction: column; background: var(--bg); box-shadow: 0 0 20px rgba(0,0,0,0.05); position: relative; }
+        
+        /* 顶部导航 */
+        .header { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--header-bg); }
+        .header h1 { font-size: 22px; font-weight: 700; }
+        .header-actions { display: flex; gap: 16px; }
+        .header-actions span { font-size: 22px; cursor: pointer; }
+        
+        /* 页面容器 */
+        .page { flex: 1; overflow-y: auto; padding: 16px; display: none; }
+        .page.active { display: block; }
+        
+        /* 底部导航 */
+        .tab-bar { display: flex; justify-content: space-around; padding: 8px 12px; border-top: 1px solid var(--border); background: var(--header-bg); }
+        .tab-item { display: flex; flex-direction: column; align-items: center; gap: 4px; color: var(--text-secondary); font-size: 12px; cursor: pointer; }
+        .tab-item.active { color: var(--accent); }
+        .tab-item .icon { font-size: 22px; }
+        
+        /* 筛选栏 */
+        .filter-bar { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+        .filter-select, .filter-btn { padding: 8px 12px; border-radius: 20px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text-primary); font-size: 13px; cursor: pointer; }
+        .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+        
+        /* 比赛卡片 */
+        .league-group { margin-bottom: 20px; }
+        .league-title { font-size: 18px; font-weight: 700; margin-bottom: 12px; padding-left: 10px; border-left: 4px solid var(--accent); }
+        .card { background: var(--card-bg); border-radius: 20px; padding: 16px; margin-bottom: 12px; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+        .teams { font-size: 17px; font-weight: 700; }
+        .favorite-btn { background: none; border: none; font-size: 20px; cursor: pointer; color: var(--text-secondary); }
+        .favorite-btn.active { color: #fbbf24; }
+        .meta-row { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 12px; color: var(--text-secondary); margin-bottom: 10px; }
+        .prob-row { display: flex; justify-content: space-between; margin: 8px 0; }
+        .prob-label { color: var(--text-secondary); font-size: 13px; }
+        .prob-values { display: flex; gap: 16px; }
+        .prob-value { font-weight: 700; }
+        .home { color: var(--success); } .draw { color: var(--warning); } .away { color: var(--danger); } .ou { color: var(--ou); }
+        
+        /* 准确率面板 */
+        .accuracy-panel { background: var(--card-bg); border-radius: 16px; padding: 16px; margin-bottom: 20px; border: 1px solid var(--border); }
+        .accuracy-header { display: flex; justify-content: space-between; margin-bottom: 12px; }
+        .accuracy-value { font-size: 28px; font-weight: 700; color: var(--accent); }
+        .trend-up { color: var(--success); } .trend-down { color: var(--danger); }
+        .update-time { text-align: center; font-size: 11px; color: var(--text-secondary); margin-top: 8px; }
+        
+        /* 收藏区域 */
+        .favorites-section { margin-bottom: 20px; }
+        
+        /* 加载与提示 */
+        .loading { text-align: center; padding: 40px; color: var(--text-secondary); }
+        .toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: #1e293b; color: #fff; padding: 12px 20px; border-radius: 40px; font-size: 14px; z-index: 1000; opacity: 0; transition: opacity 0.3s; }
+        .toast.show { opacity: 1; }
+        
+        /* 紧凑视图 */
+        .compact .card .meta-row, .compact .card .prob-row:not(.main-prob) { display: none; }
+        .compact .card { padding: 12px; }
     </style>
 </head>
 <body class="light">
 <div class="app">
     <div class="header">
-        <h1>⚽ 122预测</h1>
+        <h1 id="pageTitle">⚽ 122预测</h1>
         <div class="header-actions">
             <span id="darkToggle">🌙</span>
             <span id="refreshBtn">🔄</span>
@@ -20,21 +102,26 @@
         </div>
     </div>
 
+    <!-- 首页（预测列表） -->
     <div id="homePage" class="page active">
+        <!-- 准确率横幅 -->
         <div class="accuracy-panel" id="accuracyBanner" onclick="switchTab('accuracy')">
             <div class="accuracy-header">
                 <span>📊 昨日准确率</span>
                 <span id="accuracyTrend"></span>
             </div>
             <div style="display: flex; align-items: baseline; gap: 16px;">
-                <div><span class="accuracy-value" id="yesterdayAccuracy">--</span><span>%</span></div>
-                <div><span id="yesterdayCorrect">--</span>/<span id="yesterdayTotal">--</span> 场</div>
+                <div><span class="accuracy-value" id="yesterdayAccuracy">--</span><span style="font-size:14px;color:var(--text-secondary);">%</span></div>
+                <div style="font-size:13px;"><span id="yesterdayCorrect">--</span>/<span id="yesterdayTotal">--</span> 场</div>
             </div>
             <div class="update-time" id="updateTime">数据更新于 --:--</div>
         </div>
 
+        <!-- 筛选栏 -->
         <div class="filter-bar">
-            <select class="filter-select" id="leagueFilter"><option value="all">全部联赛</option></select>
+            <select class="filter-select" id="leagueFilter">
+                <option value="all">全部联赛</option>
+            </select>
             <select class="filter-select" id="sortSelect">
                 <option value="time">按时间</option>
                 <option value="league">按联赛</option>
@@ -43,15 +130,18 @@
             <button class="filter-btn" id="highValueFilter">🔥 只看高价值</button>
         </div>
 
+        <!-- 收藏区域 -->
         <div class="favorites-section" id="favoritesSection" style="display:none;">
             <div class="league-title">⭐ 我的收藏</div>
             <div id="favoritesList"></div>
         </div>
 
+        <!-- 全部比赛 -->
         <div id="matchesList"></div>
         <div class="loading" id="loadingIndicator">加载数据中...</div>
     </div>
 
+    <!-- 准确率分析页 -->
     <div id="accuracyPage" class="page">
         <div class="accuracy-panel">
             <div class="accuracy-header">
@@ -62,14 +152,51 @@
         </div>
     </div>
 
+    <!-- 底部导航 -->
     <div class="tab-bar">
-        <div class="tab-item active" data-tab="home"><span class="icon">🏠</span><span>首页</span></div>
-        <div class="tab-item" data-tab="accuracy"><span class="icon">📊</span><span>准确率</span></div>
+        <div class="tab-item active" data-tab="home">
+            <span class="icon">🏠</span>
+            <span>首页</span>
+        </div>
+        <div class="tab-item" data-tab="accuracy">
+            <span class="icon">📊</span>
+            <span>准确率</span>
+        </div>
     </div>
 </div>
 
+<!-- Toast 提示 -->
+<div id="toast" class="toast"></div>
+
 <script>
-    // ========== 核心修复：准确率读取 ==========
+    // ========== 全局变量 ==========
+    let appData = null;
+    let accuracyData = null;
+    let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    let currentView = 'normal';
+    let chartInstance = null;
+
+    // ========== 初始化 ==========
+    async function init() {
+        await loadData();
+        await loadAccuracy();
+        renderAll();
+        setupEventListeners();
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').catch(() => {});
+        }
+    }
+
+    async function loadData() {
+        try {
+            const res = await fetch('data.json');
+            appData = await res.json();
+            document.getElementById('updateTime').innerText = `数据更新于 ${new Date().toLocaleTimeString('zh-CN', {hour:'2-digit',minute:'2-digit'})}`;
+        } catch (e) {
+            showToast('数据加载失败，使用缓存数据');
+        }
+    }
+
     async function loadAccuracy() {
         try {
             const res = await fetch('accuracy.json');
@@ -77,6 +204,29 @@
         } catch (e) {
             accuracyData = { history: [] };
         }
+    }
+
+    // ========== 渲染全部 ==========
+    function renderAll() {
+        if (!appData || !appData.matches) {
+            document.getElementById('loadingIndicator').innerText = '今日暂无比赛';
+            return;
+        }
+        updateLeagueFilter();
+        renderAccuracyBanner();
+        renderFavorites();
+        renderMatches();
+    }
+
+    function updateLeagueFilter() {
+        const leagues = [...new Set(appData.matches.map(m => m.league))];
+        const select = document.getElementById('leagueFilter');
+        select.innerHTML = '<option value="all">全部联赛</option>';
+        leagues.forEach(l => {
+            const opt = document.createElement('option');
+            opt.value = l; opt.innerText = l;
+            select.appendChild(opt);
+        });
     }
 
     function renderAccuracyBanner() {
@@ -90,49 +240,199 @@
         document.getElementById('yesterdayAccuracy').innerText = (latest.accuracy || 0).toFixed(1);
         document.getElementById('yesterdayCorrect').innerText = latest.correct || 0;
         document.getElementById('yesterdayTotal').innerText = latest.total || 0;
+        
+        if (accuracyData.history.length > 1) {
+            const prev = accuracyData.history[accuracyData.history.length - 2];
+            const diff = latest.accuracy - prev.accuracy;
+            const trendEl = document.getElementById('accuracyTrend');
+            trendEl.innerHTML = diff > 0 ? '↑' : '↓';
+            trendEl.className = diff > 0 ? 'trend-up' : 'trend-down';
+        }
     }
 
-    // ========== 核心修复：比赛卡片渲染（确保读取 finalProbs） ==========
+    function renderFavorites() {
+        if (favorites.length === 0) {
+            document.getElementById('favoritesSection').style.display = 'none';
+            return;
+        }
+        document.getElementById('favoritesSection').style.display = 'block';
+        const favMatches = appData.matches.filter(m => favorites.includes(m.homeTeam + '_' + m.awayTeam));
+        const html = favMatches.map(m => renderMatchCard(m, true)).join('');
+        document.getElementById('favoritesList').innerHTML = html || '<div class="loading">暂无收藏比赛</div>';
+    }
+
+    function renderMatches() {
+        const leagueFilter = document.getElementById('leagueFilter').value;
+        const highValueOnly = document.getElementById('highValueFilter').classList.contains('active');
+        const sortBy = document.getElementById('sortSelect').value;
+
+        let matches = appData.matches.filter(m => {
+            if (leagueFilter !== 'all' && m.league !== leagueFilter) return false;
+            if (highValueOnly && !m.isHighValue) return false;
+            return true;
+        });
+
+        if (sortBy === 'time') matches.sort((a,b) => new Date(a.date) - new Date(b.date));
+        else if (sortBy === 'league') matches.sort((a,b) => a.league.localeCompare(b.league));
+        else if (sortBy === 'value') matches.sort((a,b) => (b.isHighValue||0) - (a.isHighValue||0));
+
+        const grouped = {};
+        matches.forEach(m => {
+            const league = m.league || '其他';
+            if (!grouped[league]) grouped[league] = [];
+            grouped[league].push(m);
+        });
+
+        let html = '';
+        for (const league in grouped) {
+            html += `<div class="league-group"><div class="league-title">${league}</div>`;
+            html += grouped[league].map(m => renderMatchCard(m)).join('');
+            html += '</div>';
+        }
+        document.getElementById('matchesList').innerHTML = html || '<div class="loading">无匹配比赛</div>';
+        document.getElementById('loadingIndicator').style.display = 'none';
+        bindCardEvents();
+    }
+
     function renderMatchCard(m) {
         const p = m.finalProbs || { home: 0.33, draw: 0.34, away: 0.33 };
         const ou = m.overUnder || { over: 0.5, under: 0.5 };
+        const favoriteClass = favorites.includes(m.homeTeam + '_' + m.awayTeam) ? 'active' : '';
         return `
         <div class="card">
             <div class="card-header">
                 <span class="teams">${m.homeTeam} vs ${m.awayTeam}</span>
+                <button class="favorite-btn ${favoriteClass}" data-match="${m.homeTeam}_${m.awayTeam}">★</button>
             </div>
             <div class="meta-row">
                 <span>🕐 ${m.date}</span>
                 <span>🏆 ${m.league}</span>
                 <span>📊 ELO: ${m.homeElo} vs ${m.awayElo}</span>
             </div>
-            <div class="prob-row">
-                <span>胜平负</span>
-                <div>
-                    <span class="home">${(p.home * 100).toFixed(1)}%</span>
-                    <span class="draw">${(p.draw * 100).toFixed(1)}%</span>
-                    <span class="away">${(p.away * 100).toFixed(1)}%</span>
+            <div class="prob-row main-prob">
+                <span class="prob-label">胜平负</span>
+                <div class="prob-values">
+                    <span class="prob-value home">${(p.home * 100).toFixed(1)}%</span>
+                    <span class="prob-value draw">${(p.draw * 100).toFixed(1)}%</span>
+                    <span class="prob-value away">${(p.away * 100).toFixed(1)}%</span>
                 </div>
             </div>
             <div class="prob-row">
-                <span>大小球(2.5)</span>
-                <div>
-                    <span class="ou">大 ${(ou.over * 100).toFixed(1)}%</span>
-                    <span class="ou">小 ${(ou.under * 100).toFixed(1)}%</span>
+                <span class="prob-label">大小球(2.5)</span>
+                <div class="prob-values">
+                    <span class="prob-value ou">大 ${(ou.over * 100).toFixed(1)}%</span>
+                    <span class="prob-value ou">小 ${(ou.under * 100).toFixed(1)}%</span>
                 </div>
             </div>
-            <div>最可能比分: ${m.bestScore || '--'}</div>
+            <div style="font-size:13px; margin-top:6px;">最可能比分: ${m.bestScore || '--'}</div>
+            ${m.isHighValue ? '<div style="color:#f59e0b;font-size:12px;margin-top:6px;">🔥 高价值关注</div>' : ''}
         </div>
         `;
     }
 
-    // 其余函数（筛选、收藏、深色模式等）保持不变，但确保 init 调用顺序正确
-    async function init() {
-        await loadData();
-        await loadAccuracy();
-        renderAll();
+    function bindCardEvents() {
+        document.querySelectorAll('.favorite-btn').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.stopPropagation();
+                const matchKey = btn.dataset.match;
+                if (favorites.includes(matchKey)) {
+                    favorites = favorites.filter(f => f !== matchKey);
+                } else {
+                    favorites.push(matchKey);
+                }
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                renderFavorites();
+                renderMatches();
+            });
+        });
     }
 
+    function renderAccuracyChart() {
+        if (!accuracyData || !accuracyData.history || accuracyData.history.length === 0) return;
+        const ctx = document.getElementById('accuracyChart').getContext('2d');
+        if (chartInstance) chartInstance.destroy();
+        const labels = accuracyData.history.map(h => h.date.slice(5));
+        const data = accuracyData.history.map(h => h.accuracy);
+        chartInstance = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels,
+                datasets: [{
+                    label: '准确率 %',
+                    data,
+                    borderColor: '#3b82f6',
+                    backgroundColor: 'rgba(59,130,246,0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } }
+            }
+        });
+        const avg = (data.reduce((a,b)=>a+b,0) / data.length).toFixed(1);
+        document.getElementById('avgAccuracy').innerText = `${avg}%`;
+    }
+
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.querySelector(`.tab-item[data-tab="${tabId}"]`).classList.add('active');
+        document.getElementById(tabId + 'Page').classList.add('active');
+        if (tabId === 'accuracy') renderAccuracyChart();
+    }
+
+    function setupEventListeners() {
+        document.getElementById('darkToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            document.getElementById('darkToggle').innerText = document.body.classList.contains('dark') ? '☀️' : '🌙';
+        });
+
+        document.getElementById('refreshBtn').addEventListener('click', async () => {
+            showToast('正在触发数据更新...');
+            try {
+                await fetch(`https://api.github.com/repos/zzz223da/122-prediction-system/actions/workflows/daily-update.yml/dispatches`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `token ${localStorage.getItem('gh_token') || ''}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    },
+                    body: JSON.stringify({ ref: 'main' })
+                });
+                showToast('更新已触发，约30秒后刷新');
+                setTimeout(() => location.reload(), 30000);
+            } catch (e) {
+                showToast('触发失败，请稍后重试');
+            }
+        });
+
+        document.getElementById('viewToggle').addEventListener('click', () => {
+            document.querySelector('.app').classList.toggle('compact');
+            currentView = currentView === 'normal' ? 'compact' : 'normal';
+            document.getElementById('viewToggle').innerText = currentView === 'normal' ? '📋' : '📱';
+        });
+
+        document.getElementById('leagueFilter').addEventListener('change', renderMatches);
+        document.getElementById('sortSelect').addEventListener('change', renderMatches);
+        document.getElementById('highValueFilter').addEventListener('click', function() {
+            this.classList.toggle('active');
+            renderMatches();
+        });
+
+        document.querySelectorAll('.tab-item').forEach(tab => {
+            tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+        });
+    }
+
+    function showToast(msg) {
+        const toast = document.getElementById('toast');
+        toast.innerText = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    // 启动
     init();
 </script>
 </body>
