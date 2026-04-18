@@ -1,9 +1,9 @@
-name: Daily Update & Deploy
+name: 122-prediction-system · Daily Update & Deploy
 
 on:
   schedule:
     - cron: '0 2 * * *'   # UTC 2:00 = 北京时间 10:00
-  workflow_dispatch:       # 允许手动触发
+  workflow_dispatch:
 
 jobs:
   update-and-deploy:
