@@ -1,2 +1,2 @@
-soccerdata
+scrapelo
 pandas
