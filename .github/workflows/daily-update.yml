@@ -1,51 +1,46 @@
-name: Daily Prediction Update
+name: Daily Predict & Deploy to EdgeOne
 
 on:
   schedule:
-    - cron: '0 22 * * *'
-  workflow_dispatch:
+    - cron: '0 2 * * *'   # UTC 2:00 = 北京时间 10:00
+  workflow_dispatch:       # 允许手动触发
 
 jobs:
-  update:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install Python dependencies
-        run: pip install -r requirements.txt
+        run: pip install soccerdata pandas
 
-      - name: Fetch latest global ELO scores
-        run: python fetch_elo.py
+      - name: Fetch latest ELO data
+        run: python scripts/fetch_elo.py
 
-      - name: Install Node.js dependencies
-        run: npm install
+      - name: Install Node dependencies
+        run: npm ci
 
       - name: Run prediction script
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
-        run: node update.js
+        run: node scripts/dailyPredict.js
 
-      - name: Backup previous data
-        run: |
-          mkdir -p backup
-          if [ -f data.json ]; then cp data.json backup/data_$(date +%Y%m%d).json; fi
-          if [ -f club_elo.json ]; then cp club_elo.json backup/club_elo_$(date +%Y%m%d).json; fi
-          if [ -f accuracy.json ]; then cp accuracy.json backup/accuracy_$(date +%Y%m%d).json; fi
-
-      - name: Commit and push changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json club_elo.json accuracy.json elo.json
-          git diff --quiet || (git commit -m "Auto update prediction data & ELO" && git push)
+      - name: Deploy to EdgeOne Pages
+        uses: edgeone-pages/actions@v1
+        with:
+          token: ${{ secrets.EDGEONE_API_TOKEN }}
+          directory: './public'
+          -0environment: 'production'
+          
