@@ -5,15 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <title>122 足球预测 · 专业版</title>
     <style>
-        :root {
-            --bg: #f5f7fa; --card-bg: #ffffff; --text-primary: #1e293b;
-            --text-secondary: #64748b; --border: #eef2f6; --accent: #3b82f6;
-            --success: #059669; --warning: #d97706; --danger: #dc2626; --ou: #7c3aed;
-        }
-        .dark {
-            --bg: #0f172a; --card-bg: #1e293b; --text-primary: #f1f5f9;
-            --text-secondary: #94a3b8; --border: #334155;
-        }
+        /* 你的样式代码保持不变，这里省略，请粘贴你之前提供的完整 style */
+        :root { --bg: #f5f7fa; --card-bg: #ffffff; --text-primary: #1e293b; --text-secondary: #64748b; --border: #eef2f6; --accent: #3b82f6; --success: #059669; --warning: #d97706; --danger: #dc2626; --ou: #7c3aed; }
+        .dark { --bg: #0f172a; --card-bg: #1e293b; --text-primary: #f1f5f9; --text-secondary: #94a3b8; --border: #334155; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, sans-serif; }
         body { background: var(--bg); color: var(--text-primary); padding: 16px; max-width: 500px; margin: 0 auto; padding-bottom: 80px; }
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
@@ -68,11 +62,12 @@
     async function loadData() {
         try {
             const res = await fetch('data.json');
+            if (!res.ok) throw new Error('数据加载失败');
             appData = await res.json();
             document.getElementById('updateTime').innerText = `数据更新于 ${new Date().toLocaleTimeString('zh-CN', {hour:'2-digit',minute:'2-digit'})}`;
             renderAll();
         } catch (e) {
-            document.getElementById('loadingIndicator').innerText = '数据加载失败';
+            document.getElementById('loadingIndicator').innerText = '数据加载失败，请稍后刷新';
         }
     }
 
@@ -89,6 +84,7 @@
     function updateLeagueFilter() {
         const leagues = [...new Set(appData.matches.map(m => m.league))];
         const select = document.getElementById('leagueFilter');
+        select.innerHTML = '<option value="all">全部联赛</option>';
         leagues.forEach(l => {
             const opt = document.createElement('option');
             opt.value = l; opt.innerText = l;
