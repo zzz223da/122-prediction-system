@@ -1,0 +1,18 @@
+{
+  "default": {
+    "lambdaHomeBase": 1.50,
+    "lambdaAwayBase": 1.20,
+    "negBinR": 2.5,
+    "dcRho": 0.03,
+    "overUnderLine": 2.5,
+    "weatherRainImpact": 0.08,
+    "weatherWindImpact": 0.05,
+    "injuryCoreImpact": 0.12,
+    "injuryStarterImpact": 0.06,
+    "h2hPsychImpact": 0.03,
+    "weight1X2": 0.6,
+    "weightOU": 0.55
+  },
+  "英超": { "dcRho": 0.04, "negBinR": 2.6 },
+  "韩K联": { "dcRho": 0.02, "negBinR": 2.3 }
+}

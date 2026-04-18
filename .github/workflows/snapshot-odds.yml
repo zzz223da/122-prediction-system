@@ -1,0 +1,35 @@
+name: Odds Snapshot
+
+on:
+  schedule:
+    - cron: '0 14 * * *'   # 北京时间 22:00 (T-1)
+    - cron: '0 2 * * *'    # 北京时间 10:00
+    - cron: '0 5 * * *'    # 北京时间 13:00
+  workflow_dispatch:
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run snapshot script
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: node snapshot.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add odds-history.json
+          git diff --quiet || (git commit -m "Update odds snapshot" && git push)

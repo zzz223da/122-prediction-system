@@ -1,0 +1,42 @@
+name: Daily Prediction Update
+
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 北京时间 06:00
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run prediction script
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+          APIFY_API_KEY: ${{ secrets.APIFY_API_KEY }}
+        run: node update.js
+
+      - name: Backup previous data
+        run: |
+          mkdir -p backup
+          if [ -f data.json ]; then cp data.json backup/data_$(date +%Y%m%d).json; fi
+          if [ -f elo.json ]; then cp elo.json backup/elo_$(date +%Y%m%d).json; fi
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json elo.json accuracy.json
+          git diff --quiet || (git commit -m "Auto update prediction data" && git push)

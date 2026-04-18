@@ -1,0 +1,19 @@
+name: API Quota Alert
+
+on:
+  schedule:
+    - cron: '0 23 * * *'   # 北京时间 07:00
+  workflow_dispatch:
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check API-Football quota
+        run: |
+          RESPONSE=$(curl -s -H "x-rapidapi-key: ${{ secrets.FOOTBALL_API_KEY }}" -H "x-rapidapi-host: v3.football.api-sports.io" "https://v3.football.api-sports.io/status")
+          REMAINING=$(echo $RESPONSE | grep -o '"remaining":[0-9]*' | cut -d':' -f2)
+          if [ $REMAINING -lt 20 ]; then
+            echo "⚠️ API-Football quota remaining: $REMAINING / 100"
+            # 可扩展为发送 Telegram 消息
+          fi
