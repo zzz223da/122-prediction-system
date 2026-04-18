@@ -1,5 +1,5 @@
 {
-  "name": "122-football",
+  "name": "122-prediction-system",
   "version": "1.0.0",
   "description": "Football prediction with ELO and Poisson model",
   "main": "update.js",
