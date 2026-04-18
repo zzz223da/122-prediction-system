@@ -26,6 +26,7 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
           APIFY_API_KEY: ${{ secrets.APIFY_API_KEY }}
+          BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
         run: node update.js
 
       - name: Backup previous data
