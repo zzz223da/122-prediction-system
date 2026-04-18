@@ -41,4 +41,4 @@ jobs:
         env:
           EDGEONE_API_TOKEN: ${{ secrets.EDGEONE_API_TOKEN }}
         run: |
-          npx edgeone@latest pages deploy --token $EDGEONE_API_TOKEN --dir . --env production
+          npx edgeone@latest pages deploy --token $EDGEONE_API_TOKEN --dir . --env production --name 122-prediction-system
