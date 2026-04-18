@@ -1,26 +1,4 @@
 {
   "date": "2026-04-18",
-  "matches": [
-    {
-      "homeTeam": "蔚山现代",
-      "awayTeam": "首尔FC",
-      "homeElo": 1860,
-      "awayElo": 1790,
-      "league": "韩K联",
-      "date": "2026/4/18 17:09:13",
-      "homeLambda": 1.675,
-      "awayLambda": 1.06,
-      "finalProbs": {
-        "home": 0.44516225389049907,
-        "draw": 0.2928324989153064,
-        "away": 0.2620052471941946
-      },
-      "overUnder": {
-        "over": 0.3526682608730702,
-        "under": 0.6473317391269297
-      },
-      "bestScore": "0-0 (11.5%)",
-      "isHighValue": false
-    }
-  ]
+  "matches": []
 }
