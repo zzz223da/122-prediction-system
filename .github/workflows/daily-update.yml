@@ -40,4 +40,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json elo.json accuracy.json
           git commit -m "Auto update prediction data" || true
-    git push
+          git push
