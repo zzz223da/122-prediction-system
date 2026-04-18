@@ -1,4 +1,4268 @@
 {
   "date": "2026-04-18",
-  "matches": []
+  "matches": [
+    {
+      "homeTeam": "Mazatlán FC",
+      "awayTeam": "Querétaro FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga MX Clausura",
+      "date": "2026/4/18 01:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Atlético San Luis",
+      "awayTeam": "Pumas UNAM",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga MX Clausura",
+      "date": "2026/4/18 01:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Vancouver Whitecaps",
+      "awayTeam": "Sporting Kansas City",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 02:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Club Necaxa",
+      "awayTeam": "Tigres UANL",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga MX Clausura",
+      "date": "2026/4/18 03:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Millwall",
+      "awayTeam": "Queens Park Rangers",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 11:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Derby County",
+      "awayTeam": "Oxford United",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 11:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Portsmouth",
+      "awayTeam": "Leicester City",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 11:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Brentford",
+      "awayTeam": "Fulham",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/18 11:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FK Csíkszereda Miercurea Ciuc",
+      "awayTeam": "AFC Unirea 04 Slobozia",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Superliga",
+      "date": "2026/4/18 11:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Fatih Karagümrük",
+      "awayTeam": "Eyüpspor",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Trendyol Super Lig",
+      "date": "2026/4/18 11:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Radomiak Radom",
+      "awayTeam": "Widzew Łódź",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ekstraklasa",
+      "date": "2026/4/18 12:45:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Mjällby AIF",
+      "awayTeam": "IF Brommapojkarna",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Allsvenskan",
+      "date": "2026/4/18 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Hammarby IF",
+      "awayTeam": "Örgryte IS",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Allsvenskan",
+      "date": "2026/4/18 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "IK Sirius",
+      "awayTeam": "Västerås SK",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Allsvenskan",
+      "date": "2026/4/18 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Halmstads BK",
+      "awayTeam": "IFK Göteborg",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Allsvenskan",
+      "date": "2026/4/18 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Mamelodi Sundowns",
+      "awayTeam": "Espérance Tunis",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "CAF Champions League",
+      "date": "2026/4/18 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Udinese",
+      "awayTeam": "Parma",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Serie A",
+      "date": "2026/4/18 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "AE Kifisia",
+      "awayTeam": "Asteras Aktor",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Stoiximan Super League",
+      "date": "2026/4/18 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Bayer 04 Leverkusen",
+      "awayTeam": "FC Augsburg",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Bundesliga",
+      "date": "2026/4/18 13:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "SV Werder Bremen",
+      "awayTeam": "Hamburger SV",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Bundesliga",
+      "date": "2026/4/18 13:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "TSG Hoffenheim",
+      "awayTeam": "Borussia Dortmund",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Bundesliga",
+      "date": "2026/4/18 13:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "1. FC Union Berlin",
+      "awayTeam": "VfL Wolfsburg",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Bundesliga",
+      "date": "2026/4/18 13:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Hull City",
+      "awayTeam": "Birmingham City",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Sheffield Wednesday",
+      "awayTeam": "Charlton Athletic",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Bristol City",
+      "awayTeam": "Norwich City",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Preston North End",
+      "awayTeam": "West Bromwich Albion",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Watford",
+      "awayTeam": "Sheffield United",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Swansea City",
+      "awayTeam": "Southampton",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Wrexham",
+      "awayTeam": "Stoke City",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Leeds United",
+      "awayTeam": "Wolverhampton",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Newcastle United",
+      "awayTeam": "Bournemouth",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Royal Antwerp FC",
+      "awayTeam": "Oud-Heverlee Leuven",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Pro League",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "APS Atromitos Athinon",
+      "awayTeam": "AEL Novibet",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Stoiximan Super League",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Kocaelispor",
+      "awayTeam": "Göztepe",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Trendyol Super Lig",
+      "date": "2026/4/18 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "CD Nacional",
+      "awayTeam": "FC Alverca",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga Portugal Betclic",
+      "date": "2026/4/18 14:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Lorient",
+      "awayTeam": "Olympique de Marseille",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ligue 1",
+      "date": "2026/4/18 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "OFI Crete",
+      "awayTeam": "APO Levadiakos",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Stoiximan Super League",
+      "date": "2026/4/18 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Górnik Zabrze",
+      "awayTeam": "MKS Korona Kielce",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ekstraklasa",
+      "date": "2026/4/18 15:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Lazio",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Serie A",
+      "date": "2026/4/18 16:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Aris Thessaloniki",
+      "awayTeam": "NPS Volos",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Stoiximan Super League",
+      "date": "2026/4/18 16:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "RC Sporting Charleroi",
+      "awayTeam": "Standard Liège",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Pro League",
+      "date": "2026/4/18 16:15:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "KVC Westerlo",
+      "awayTeam": "KRC Genk",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Pro League",
+      "date": "2026/4/18 16:15:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Eintracht Frankfurt",
+      "awayTeam": "RB Leipzig",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Bundesliga",
+      "date": "2026/4/18 16:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Tottenham Hotspur",
+      "awayTeam": "Brighton & Hove Albion",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/18 16:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Casa Pia",
+      "awayTeam": "Santa Clara",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga Portugal Betclic",
+      "date": "2026/4/18 17:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Angers",
+      "awayTeam": "Le Havre",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ligue 1",
+      "date": "2026/4/18 17:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Toronto FC",
+      "awayTeam": "Austin FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 17:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "GFS Panetolikos",
+      "awayTeam": "MGS Panserraikos",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Stoiximan Super League",
+      "date": "2026/4/18 17:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Gençlerbirliği",
+      "awayTeam": "Galatasaray",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Trendyol Super Lig",
+      "date": "2026/4/18 17:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FC Dinamo București",
+      "awayTeam": "FC Universitatea Cluj",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Superliga",
+      "date": "2026/4/18 18:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Pogoń Szczecin",
+      "awayTeam": "Lech Poznań",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ekstraklasa",
+      "date": "2026/4/18 18:15:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "CF Montréal",
+      "awayTeam": "New York Red Bulls",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 18:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "KV Mechelen",
+      "awayTeam": "RSC Anderlecht",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Pro League",
+      "date": "2026/4/18 18:45:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Roma",
+      "awayTeam": "Atalanta",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Serie A",
+      "date": "2026/4/18 18:45:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "RS Berkane",
+      "awayTeam": "AS FAR Rabat",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "CAF Champions League",
+      "date": "2026/4/18 19:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Chelsea",
+      "awayTeam": "Manchester United",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/18 19:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Lille",
+      "awayTeam": "Nice",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ligue 1",
+      "date": "2026/4/18 19:05:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Gil Vicente",
+      "awayTeam": "Vitória SC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga Portugal Betclic",
+      "date": "2026/4/18 19:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Colorado Rapids",
+      "awayTeam": "Inter Miami CF",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 20:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "América Mineiro",
+      "awayTeam": "Sport Recife",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie B",
+      "date": "2026/4/18 21:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Náutico",
+      "awayTeam": "São Bernardo",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie B",
+      "date": "2026/4/18 21:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Chapecoense",
+      "awayTeam": "Botafogo",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/18 21:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Vasco da Gama",
+      "awayTeam": "São Paulo",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/18 21:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Vila Nova FC",
+      "awayTeam": "Operário-PR",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie B",
+      "date": "2026/4/18 21:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Corinthians",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/18 23:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Cruz Azul",
+      "awayTeam": "Club Tijuana",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga MX Clausura",
+      "date": "2026/4/18 23:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Grêmio",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/18 23:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Avaí",
+      "awayTeam": "Ponte Preta",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie B",
+      "date": "2026/4/18 23:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Philadelphia Union",
+      "awayTeam": "DC United",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 23:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FC Cincinnati",
+      "awayTeam": "Chicago Fire",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 23:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Atlanta United",
+      "awayTeam": "Nashville SC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 23:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Orlando City SC",
+      "awayTeam": "Houston Dynamo",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 23:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "New York City FC",
+      "awayTeam": "Charlotte FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 23:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "New England Revolution",
+      "awayTeam": "Columbus Crew",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/18 23:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "CRB",
+      "awayTeam": "Juventude",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie B",
+      "date": "2026/4/18 23:45:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FC Dallas",
+      "awayTeam": "LA Galaxy",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/19 00:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Minnesota United",
+      "awayTeam": "Portland Timbers",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/19 00:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "CF Monterrey",
+      "awayTeam": "CF Pachuca",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga MX Clausura",
+      "date": "2026/4/19 01:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "CD Guadalajara",
+      "awayTeam": "Club Puebla",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga MX Clausura",
+      "date": "2026/4/19 01:07:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Seattle Sounders FC",
+      "awayTeam": "St.Louis City",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/19 01:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Real Salt Lake",
+      "awayTeam": "San Diego FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/19 01:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Club León",
+      "awayTeam": "FC Juárez",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga MX Clausura",
+      "date": "2026/4/19 03:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Club América",
+      "awayTeam": "CD Toluca",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga MX Clausura",
+      "date": "2026/4/19 03:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Cremonese",
+      "awayTeam": "Torino",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Serie A",
+      "date": "2026/4/19 10:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Ipswich Town",
+      "awayTeam": "Middlesbrough",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Championship",
+      "date": "2026/4/19 11:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "KAA Gent",
+      "awayTeam": "Sint-Truidense VV",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Pro League",
+      "date": "2026/4/19 11:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Kasımpaşa",
+      "awayTeam": "Alanyaspor",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Trendyol Super Lig",
+      "date": "2026/4/19 11:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "AIK",
+      "awayTeam": "Kalmar FF",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Allsvenskan",
+      "date": "2026/4/19 12:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Raków Częstochowa",
+      "awayTeam": "Cracovia",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ekstraklasa",
+      "date": "2026/4/19 12:45:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "AS Monaco",
+      "awayTeam": "Auxerre",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ligue 1",
+      "date": "2026/4/19 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Nottingham Forest",
+      "awayTeam": "Burnley",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/19 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Aston Villa",
+      "awayTeam": "Sunderland",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/19 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Everton",
+      "awayTeam": "Liverpool",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/19 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Hellas Verona",
+      "awayTeam": "Milan",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Serie A",
+      "date": "2026/4/19 13:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "SC Freiburg",
+      "awayTeam": "1. FC Heidenheim",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Bundesliga",
+      "date": "2026/4/19 13:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Mirassol",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/19 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FCV Dender",
+      "awayTeam": "Cercle Brugge",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Pro League",
+      "date": "2026/4/19 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Samsunspor",
+      "awayTeam": "Beşiktaş JK",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Trendyol Super Lig",
+      "date": "2026/4/19 14:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "BK Häcken",
+      "awayTeam": "GAIS",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Allsvenskan",
+      "date": "2026/4/19 14:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FC Arouca",
+      "awayTeam": "CF Estrela Amadora",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga Portugal Betclic",
+      "date": "2026/4/19 14:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FC Petrolul Ploiești",
+      "awayTeam": "FC Hermannstadt",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Superliga",
+      "date": "2026/4/19 14:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Abia Warriors",
+      "awayTeam": "Ikorodu City",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Enugu Rangers International",
+      "awayTeam": "Enyimba",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "El Kanemi Warriors",
+      "awayTeam": "Shooting Stars",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Katsina United",
+      "awayTeam": "Bayelsa United FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Kano Pillars",
+      "awayTeam": "Rivers United",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Kwara United",
+      "awayTeam": "Barau FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Kwara United",
+      "awayTeam": "Bendel Insurance FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Nasarawa United",
+      "awayTeam": "Warri Wolves FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Plateau United",
+      "awayTeam": "Kun Khalifat FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Remo Stars",
+      "awayTeam": "Niger Tornadoes",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Nigeria Premier Football League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "AEK Athens",
+      "awayTeam": "PAOK",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Stoiximan Super League",
+      "date": "2026/4/19 15:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Nantes",
+      "awayTeam": "Stade Brestois",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ligue 1",
+      "date": "2026/4/19 15:15:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "RC Strasbourg",
+      "awayTeam": "Stade Rennais",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ligue 1",
+      "date": "2026/4/19 15:15:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Metz",
+      "awayTeam": "Paris FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ligue 1",
+      "date": "2026/4/19 15:15:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FC Bayern München",
+      "awayTeam": "VfB Stuttgart",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Bundesliga",
+      "date": "2026/4/19 15:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "MZKS Arka Gdynia",
+      "awayTeam": "Jagiellonia Białystok",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ekstraklasa",
+      "date": "2026/4/19 15:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Manchester City",
+      "awayTeam": "Arsenal",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/19 15:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Pisa",
+      "awayTeam": "Genoa",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Serie A",
+      "date": "2026/4/19 16:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Royale Union Saint-Gilloise",
+      "awayTeam": "Club Brugge KV",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Pro League",
+      "date": "2026/4/19 16:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Sporting CP",
+      "awayTeam": "Benfica",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga Portugal Betclic",
+      "date": "2026/4/19 17:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Trabzonspor",
+      "awayTeam": "Başakşehir FK",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Trendyol Super Lig",
+      "date": "2026/4/19 17:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "RAAL La Louvière",
+      "awayTeam": "SV Zulte Waregem",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Pro League",
+      "date": "2026/4/19 17:15:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Borussia M'gladbach",
+      "awayTeam": "1. FSV Mainz 05",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Bundesliga",
+      "date": "2026/4/19 17:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Universitatea Craiova",
+      "awayTeam": "FC Rapid București",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Superliga",
+      "date": "2026/4/19 17:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Panathinaikos FC",
+      "awayTeam": "Olympiacos FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Stoiximan Super League",
+      "date": "2026/4/19 18:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Paris Saint-Germain",
+      "awayTeam": "Olympique Lyonnais",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Ligue 1",
+      "date": "2026/4/19 18:45:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Bologna",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Serie A",
+      "date": "2026/4/19 18:45:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Coritiba",
+      "awayTeam": "Atlético Mineiro",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/19 19:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Santos",
+      "awayTeam": "Fluminense",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/19 19:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Londrina",
+      "awayTeam": "Ceará",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie B",
+      "date": "2026/4/19 19:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Sporting Braga",
+      "awayTeam": "Famalicão",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga Portugal Betclic",
+      "date": "2026/4/19 19:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FC Porto",
+      "awayTeam": "Tondela",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga Portugal Betclic",
+      "date": "2026/4/19 19:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Goiás",
+      "awayTeam": "Cuiabá",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie B",
+      "date": "2026/4/19 21:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Red Bull Bragantino",
+      "awayTeam": "Remo",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/19 21:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Athletico",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/19 21:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Bahia",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie A",
+      "date": "2026/4/19 22:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Grêmio Novorizontino",
+      "awayTeam": "Athletic Club",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie B",
+      "date": "2026/4/19 23:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Criciúma",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Brasileirão Serie B",
+      "date": "2026/4/19 23:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Santos Laguna",
+      "awayTeam": "Atlas FC",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga MX Clausura",
+      "date": "2026/4/19 23:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Los Angeles FC",
+      "awayTeam": "San Jose Earthquakes",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "MLS",
+      "date": "2026/4/19 23:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FC Botoșani",
+      "awayTeam": "FC Metaloglobus București",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Superliga",
+      "date": "2026/4/20 14:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Gaziantep FK",
+      "awayTeam": "Kayserispor",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Trendyol Super Lig",
+      "date": "2026/4/20 17:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "FC Farul Constanța",
+      "awayTeam": "FCSB",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Superliga",
+      "date": "2026/4/20 17:30:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Lecce",
+      "awayTeam": "Fiorentina",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Serie A",
+      "date": "2026/4/20 18:45:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Crystal Palace",
+      "awayTeam": "West Ham United",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Premier League",
+      "date": "2026/4/20 19:00:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    },
+    {
+      "homeTeam": "Moreirense",
+      "awayTeam": "Estoril Praia",
+      "homeElo": 1750,
+      "awayElo": 1750,
+      "league": "Liga Portugal Betclic",
+      "date": "2026/4/20 19:15:00",
+      "homeLambda": 1.85,
+      "awayLambda": 1.2,
+      "myProbs": {
+        "home": 0.4535381401161646,
+        "draw": 0.2718407889197939,
+        "away": 0.27462107096404154,
+        "over25": 0.40169715182293664,
+        "under25": 0.5983028481770635,
+        "bestScore": "0-0 (9.4%)",
+        "secondScore": "1-0 (8.0%)"
+      },
+      "bsdProbs": {
+        "home": 0.42131711643203473,
+        "draw": 0.2457826751733503,
+        "away": 0.332900208394615,
+        "over25": 0.5891516405483845,
+        "under25": null,
+        "mostLikelyScore": "1-1"
+      },
+      "factors": {},
+      "isHighValue": false
+    }
+  ]
 }
