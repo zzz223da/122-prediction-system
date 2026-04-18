@@ -30,7 +30,7 @@ jobs:
         run: python fetch_elo.py
 
       - name: Install Node dependencies
-        run: npm ci
+        run: npm install
 
       - name: Run prediction update
         env:
