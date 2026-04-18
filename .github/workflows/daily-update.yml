@@ -3,7 +3,7 @@ name: Daily Update & Deploy
 on:
   schedule:
     - cron: '0 2 * * *'   # UTC 2:00 = 北京时间 10:00
-  workflow_dispatch:
+  workflow_dispatch:       # 允许手动触发
 
 jobs:
   update-and-deploy:
@@ -41,5 +41,4 @@ jobs:
         env:
           EDGEONE_API_TOKEN: ${{ secrets.EDGEONE_API_TOKEN }}
         run: |
-          npm install -g edgeone
-          edgeone pages deploy --token $EDGEONE_API_TOKEN --dir . --env production
+          npx edgeone@latest pages deploy --token $EDGEONE_API_TOKEN --dir . --env production
