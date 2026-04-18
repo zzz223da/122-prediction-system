@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 
 // ========== 配置 ==========
 const BSD_API_KEY = process.env.BSD_API_KEY || '';
-const DAYS_AHEAD = 7;
+const DAYS_AHEAD = 2;
 
 // 因子系数（可手动调整）
 const COEFFS = {
