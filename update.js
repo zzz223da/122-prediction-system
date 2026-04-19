@@ -1,6 +1,7 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
-const fuzzy = require('fast-fuzzy'); // 模糊匹配库
+const fuzzy = require('fast-fuzzy');
+const translate = require('@vitalets/google-translate-api');
 
 // ========== 配置 ==========
 const BSD_API_KEY = process.env.BSD_API_KEY || '';
@@ -29,18 +30,125 @@ try {
   }
 }
 
-// ========== 模糊匹配函数 ==========
-function findBestMatch(chineseName) {
-  if (!chineseName) return null;
-  const THRESHOLD = 0.7; // 相似度阈值，0.7 表示 70% 相似即可匹配
+// ========== 极简别名表 ==========
+const ALIAS_MAP = {
+  "Milan": "AC Milan",
+  "Inter": "Inter Milan",
+  "Juventus": "Juventus",
+  "Roma": "AS Roma",
+  "Napoli": "Napoli",
+  "Lazio": "Lazio",
+  "Atalanta": "Atalanta",
+  "Fiorentina": "Fiorentina",
+  "Bologna": "Bologna",
+  "Genoa": "Genoa",
+  "Torino": "Torino",
+  "Udinese": "Udinese",
+  "Parma": "Parma",
+  "Lecce": "Lecce",
+  "Pisa": "Pisa",
+  "Bayern München": "Bayern Munich",
+  "Dortmund": "Borussia Dortmund",
+  "Leipzig": "RB Leipzig",
+  "Leverkusen": "Bayer Leverkusen",
+  "PSG": "Paris Saint-Germain",
+  "Man City": "Manchester City",
+  "Man Utd": "Manchester United",
+  "Spurs": "Tottenham Hotspur",
+  "Bayern": "Bayern Munich"
+};
 
-  const match = fuzzy.search(chineseName, eloTeamList, { returnMatchData: true })[0];
+// ========== 辅助函数：队名标准化 ==========
+function normalizeName(name) {
+  if (!name) return '';
+  return name
+    .replace(/\s*FC$/i, '')
+    .replace(/\s*SC$/i, '')
+    .replace(/\s*AFC$/i, '')
+    .replace(/\s*CF$/i, '')
+    .replace(/\s*AC$/i, '')
+    .replace(/\s*AS$/i, '')
+    .trim()
+    .toLowerCase();
+}
 
-  if (match && match.score >= THRESHOLD) {
-    console.log(`   ✅ 模糊匹配: "${chineseName}" → "${match.item}" (得分: ${match.score.toFixed(2)})`);
-    return match.item;
+// ========== 翻译函数 ==========
+async function translateToEnglish(text) {
+  if (!text || text.length < 2) return text;
+  try {
+    console.log(`      🌐 翻译: "${text}"`);
+    const res = await translate(text, { to: 'en' });
+    console.log(`      ✅ 翻译结果: "${res.text}"`);
+    return res.text;
+  } catch (error) {
+    console.warn(`      ⚠️ 翻译失败: ${error.message}，将使用原文`);
+    return text;
   }
-  console.log(`   ⚠️ 模糊匹配失败: "${chineseName}" 未找到相似队名`);
+}
+
+// ========== 增强匹配函数：别名 → 直接匹配 → 翻译后精确匹配 → 翻译后模糊匹配 → 原始模糊匹配 ==========
+async function findBestMatch(inputName) {
+  if (!inputName) return null;
+
+  // 1. 别名表
+  if (ALIAS_MAP[inputName]) {
+    console.log(`   ✅ 别名匹配: "${inputName}" → "${ALIAS_MAP[inputName]}"`);
+    return ALIAS_MAP[inputName];
+  }
+
+  // 2. 直接精确匹配
+  if (ELO_DB.hasOwnProperty(inputName)) {
+    console.log(`   ✅ 直接匹配: "${inputName}"`);
+    return inputName;
+  }
+
+  // 3. 翻译成英文
+  const translated = await translateToEnglish(inputName);
+  
+  // 4. 翻译后精确匹配
+  if (ELO_DB.hasOwnProperty(translated)) {
+    console.log(`   ✅ 翻译后精确匹配: "${translated}"`);
+    return translated;
+  }
+
+  // 5. 翻译后模糊匹配（阈值 0.5）
+  const normalizedTranslated = normalizeName(translated);
+  const normalizedEloList = eloTeamList.map(name => ({
+    original: name,
+    normalized: normalizeName(name)
+  }));
+
+  let bestMatch = null;
+  let bestScore = 0;
+  for (const item of normalizedEloList) {
+    const score = fuzzy.similarity(normalizedTranslated, item.normalized);
+    if (score > bestScore) {
+      bestScore = score;
+      bestMatch = item.original;
+    }
+  }
+  if (bestScore >= 0.5) {
+    console.log(`   ✅ 翻译后模糊匹配: "${translated}" → "${bestMatch}" (得分: ${bestScore.toFixed(2)})`);
+    return bestMatch;
+  }
+
+  // 6. 回退：原始名称模糊匹配（阈值 0.5）
+  const rawNormalized = normalizeName(inputName);
+  let rawBestMatch = null;
+  let rawBestScore = 0;
+  for (const item of normalizedEloList) {
+    const score = fuzzy.similarity(rawNormalized, item.normalized);
+    if (score > rawBestScore) {
+      rawBestScore = score;
+      rawBestMatch = item.original;
+    }
+  }
+  if (rawBestScore >= 0.5) {
+    console.log(`   ✅ 原始模糊匹配: "${inputName}" → "${rawBestMatch}" (得分: ${rawBestScore.toFixed(2)})`);
+    return rawBestMatch;
+  }
+
+  console.log(`   ❌ 所有匹配方式均失败: "${inputName}"`);
   return null;
 }
 
@@ -168,9 +276,8 @@ async function main() {
     const awayScore = ev.away_score;
     if (homeScore === null || awayScore === null) continue;
 
-    // 先尝试直接匹配，再模糊匹配
-    let homeKey = ELO_DB.hasOwnProperty(home) ? home : findBestMatch(home);
-    let awayKey = ELO_DB.hasOwnProperty(away) ? away : findBestMatch(away);
+    const homeKey = await findBestMatch(home);
+    const awayKey = await findBestMatch(away);
 
     const homeElo = ELO_DB[homeKey] || 1750;
     const awayElo = ELO_DB[awayKey] || 1750;
@@ -202,9 +309,8 @@ async function main() {
       mostLikelyScore: bsdPred.most_likely_score
     } : null;
 
-    // 先尝试直接匹配，再模糊匹配
-    let homeKey = ELO_DB.hasOwnProperty(homeTeam) ? homeTeam : findBestMatch(homeTeam);
-    let awayKey = ELO_DB.hasOwnProperty(awayTeam) ? awayTeam : findBestMatch(awayTeam);
+    const homeKey = await findBestMatch(homeTeam);
+    const awayKey = await findBestMatch(awayTeam);
 
     const homeElo = ELO_DB[homeKey] || 1750;
     const awayElo = ELO_DB[awayKey] || 1750;
