@@ -1,7 +1,7 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
 const fuzzy = require('fast-fuzzy');
-const translate = require('@vitalets/google-translate-api');
+const translate = require('translate-google');
 
 // ========== 配置 ==========
 const BSD_API_KEY = process.env.BSD_API_KEY || '';
@@ -78,15 +78,15 @@ async function translateToEnglish(text) {
   try {
     console.log(`      🌐 翻译: "${text}"`);
     const res = await translate(text, { to: 'en' });
-    console.log(`      ✅ 翻译结果: "${res.text}"`);
-    return res.text;
+    console.log(`      ✅ 翻译结果: "${res}"`);
+    return res;
   } catch (error) {
     console.warn(`      ⚠️ 翻译失败: ${error.message}，将使用原文`);
     return text;
   }
 }
 
-// ========== 增强匹配函数：别名 → 直接匹配 → 翻译后精确匹配 → 翻译后模糊匹配 → 原始模糊匹配 ==========
+// ========== 增强匹配函数 ==========
 async function findBestMatch(inputName) {
   if (!inputName) return null;
 
