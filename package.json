@@ -4,9 +4,7 @@
   "description": "Football prediction with ELO and Poisson model",
   "main": "update.js",
   "scripts": {
-    "update": "node update.js",
-    "snapshot": "node snapshot.js",
-    "backtest": "node backtest.js"
+    "update": "node update.js"
   },
   "dependencies": {
     "node-fetch": "^2.6.9",
