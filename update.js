@@ -1,5 +1,6 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
+const fuzzy = require('fast-fuzzy'); // 模糊匹配库
 
 // ========== 配置 ==========
 const BSD_API_KEY = process.env.BSD_API_KEY || '';
@@ -13,22 +14,37 @@ const COEFFS = {
 
 // ========== 读取 ELO 数据库 ==========
 let ELO_DB = {};
+let eloTeamList = [];
 try {
   ELO_DB = JSON.parse(fs.readFileSync('club_elo.json', 'utf8'));
-  console.log(`✅ 从 club_elo.json 加载了 ${Object.keys(ELO_DB).length} 支球队的 ELO`);
+  eloTeamList = Object.keys(ELO_DB);
+  console.log(`✅ 从 club_elo.json 加载了 ${eloTeamList.length} 支球队的 ELO`);
 } catch {
   try {
     ELO_DB = JSON.parse(fs.readFileSync('elo.json', 'utf8'));
-    console.log(`⚠️ 回退到 elo.json，包含 ${Object.keys(ELO_DB).length} 支球队`);
+    eloTeamList = Object.keys(ELO_DB);
+    console.log(`⚠️ 回退到 elo.json，包含 ${eloTeamList.length} 支球队`);
   } catch {
     console.log('❌ 未找到任何 ELO 数据库，将使用默认值 1750');
   }
 }
 
-let ACCURACY = { history: [] };
-try { ACCURACY = JSON.parse(fs.readFileSync('accuracy.json', 'utf8')); } catch {}
+// ========== 模糊匹配函数 ==========
+function findBestMatch(chineseName) {
+  if (!chineseName) return null;
+  const THRESHOLD = 0.7; // 相似度阈值，0.7 表示 70% 相似即可匹配
 
-// ========== 数学工具 ==========
+  const match = fuzzy.search(chineseName, eloTeamList, { returnMatchData: true })[0];
+
+  if (match && match.score >= THRESHOLD) {
+    console.log(`   ✅ 模糊匹配: "${chineseName}" → "${match.item}" (得分: ${match.score.toFixed(2)})`);
+    return match.item;
+  }
+  console.log(`   ⚠️ 模糊匹配失败: "${chineseName}" 未找到相似队名`);
+  return null;
+}
+
+// ========== 数学工具（泊松模型） ==========
 function factorial(n) {
   if (n <= 1) return 1;
   let f = 1;
@@ -152,12 +168,16 @@ async function main() {
     const awayScore = ev.away_score;
     if (homeScore === null || awayScore === null) continue;
 
-    const homeElo = ELO_DB[home] || 1750;
-    const awayElo = ELO_DB[away] || 1750;
+    // 先尝试直接匹配，再模糊匹配
+    let homeKey = ELO_DB.hasOwnProperty(home) ? home : findBestMatch(home);
+    let awayKey = ELO_DB.hasOwnProperty(away) ? away : findBestMatch(away);
+
+    const homeElo = ELO_DB[homeKey] || 1750;
+    const awayElo = ELO_DB[awayKey] || 1750;
     const { homeDelta, awayDelta } = eloChange(homeElo, awayElo, homeScore, awayScore);
 
-    ELO_DB[home] = Math.round((homeElo + homeDelta) * 10) / 10;
-    ELO_DB[away] = Math.round((awayElo + awayDelta) * 10) / 10;
+    if (homeKey) ELO_DB[homeKey] = Math.round((homeElo + homeDelta) * 10) / 10;
+    if (awayKey) ELO_DB[awayKey] = Math.round((awayElo + awayDelta) * 10) / 10;
     updatedCount++;
   }
   console.log(`✅ ELO 更新完成，共处理 ${updatedCount} 场比赛\n`);
@@ -182,8 +202,12 @@ async function main() {
       mostLikelyScore: bsdPred.most_likely_score
     } : null;
 
-    const homeElo = ELO_DB[homeTeam] || 1750;
-    const awayElo = ELO_DB[awayTeam] || 1750;
+    // 先尝试直接匹配，再模糊匹配
+    let homeKey = ELO_DB.hasOwnProperty(homeTeam) ? homeTeam : findBestMatch(homeTeam);
+    let awayKey = ELO_DB.hasOwnProperty(awayTeam) ? awayTeam : findBestMatch(awayTeam);
+
+    const homeElo = ELO_DB[homeKey] || 1750;
+    const awayElo = ELO_DB[awayKey] || 1750;
     const eloDiff = homeElo - awayElo;
 
     let homeLambda = 1.50 + eloDiff / COEFFS.eloDiffWeight + COEFFS.homeAdv;
@@ -226,6 +250,8 @@ async function main() {
   fs.writeFileSync('elo.json', JSON.stringify(ELO_DB, null, 2));
   fs.writeFileSync('club_elo.json', JSON.stringify(ELO_DB, null, 2));
 
+  let ACCURACY = { history: [] };
+  try { ACCURACY = JSON.parse(fs.readFileSync('accuracy.json', 'utf8')); } catch {}
   ACCURACY.history.push({
     date: new Date().toISOString().split('T')[0],
     accuracy: 53.2,
