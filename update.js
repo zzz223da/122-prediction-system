@@ -1,7 +1,6 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
 const fuzzy = require('fast-fuzzy');
-const translate = require('translate-google');
 
 // ========== 配置 ==========
 const BSD_API_KEY = process.env.BSD_API_KEY || '';
@@ -46,7 +45,6 @@ const ALIAS_MAP = {
   "Udinese": "Udinese",
   "Parma": "Parma",
   "Lecce": "Lecce",
-  "Pisa": "Pisa",
   "Bayern München": "Bayern Munich",
   "Dortmund": "Borussia Dortmund",
   "Leipzig": "RB Leipzig",
@@ -58,7 +56,7 @@ const ALIAS_MAP = {
   "Bayern": "Bayern Munich"
 };
 
-// ========== 辅助函数：队名标准化 ==========
+// ========== 名称标准化 ==========
 function normalizeName(name) {
   if (!name) return '';
   return name
@@ -68,26 +66,15 @@ function normalizeName(name) {
     .replace(/\s*CF$/i, '')
     .replace(/\s*AC$/i, '')
     .replace(/\s*AS$/i, '')
+    .replace(/\s*KV$/i, '')
+    .replace(/\s*RC$/i, '')
+    .replace(/\s*Sporting$/i, '')
     .trim()
     .toLowerCase();
 }
 
-// ========== 翻译函数 ==========
-async function translateToEnglish(text) {
-  if (!text || text.length < 2) return text;
-  try {
-    console.log(`      🌐 翻译: "${text}"`);
-    const res = await translate(text, { to: 'en' });
-    console.log(`      ✅ 翻译结果: "${res}"`);
-    return res;
-  } catch (error) {
-    console.warn(`      ⚠️ 翻译失败: ${error.message}，将使用原文`);
-    return text;
-  }
-}
-
 // ========== 增强匹配函数 ==========
-async function findBestMatch(inputName) {
+function findBestMatch(inputName) {
   if (!inputName) return null;
 
   // 1. 别名表
@@ -102,45 +89,38 @@ async function findBestMatch(inputName) {
     return inputName;
   }
 
-  // 3. 翻译成英文
-  const translated = await translateToEnglish(inputName);
-  
-  // 4. 翻译后精确匹配
-  if (ELO_DB.hasOwnProperty(translated)) {
-    console.log(`   ✅ 翻译后精确匹配: "${translated}"`);
-    return translated;
+  // 3. 标准化后精确匹配
+  const normalizedInput = normalizeName(inputName);
+  for (const key of eloTeamList) {
+    if (normalizeName(key) === normalizedInput) {
+      console.log(`   ✅ 标准化精确匹配: "${inputName}" → "${key}"`);
+      return key;
+    }
   }
 
-  // 5. 翻译后模糊匹配（阈值 0.5）
-  const normalizedTranslated = normalizeName(translated);
-  const normalizedEloList = eloTeamList.map(name => ({
-    original: name,
-    normalized: normalizeName(name)
-  }));
-
+  // 4. 模糊匹配（阈值 0.5）
   let bestMatch = null;
   let bestScore = 0;
-  for (const item of normalizedEloList) {
-    const score = fuzzy.similarity(normalizedTranslated, item.normalized);
+  for (const key of eloTeamList) {
+    const score = fuzzy(normalizedInput, normalizeName(key));
     if (score > bestScore) {
       bestScore = score;
-      bestMatch = item.original;
+      bestMatch = key;
     }
   }
   if (bestScore >= 0.5) {
-    console.log(`   ✅ 翻译后模糊匹配: "${translated}" → "${bestMatch}" (得分: ${bestScore.toFixed(2)})`);
+    console.log(`   ✅ 模糊匹配: "${inputName}" → "${bestMatch}" (得分: ${bestScore.toFixed(2)})`);
     return bestMatch;
   }
 
-  // 6. 回退：原始名称模糊匹配（阈值 0.5）
-  const rawNormalized = normalizeName(inputName);
+  // 5. 原始字符串模糊匹配（备用）
   let rawBestMatch = null;
   let rawBestScore = 0;
-  for (const item of normalizedEloList) {
-    const score = fuzzy.similarity(rawNormalized, item.normalized);
+  for (const key of eloTeamList) {
+    const score = fuzzy(inputName, key);
     if (score > rawBestScore) {
       rawBestScore = score;
-      rawBestMatch = item.original;
+      rawBestMatch = key;
     }
   }
   if (rawBestScore >= 0.5) {
@@ -276,8 +256,8 @@ async function main() {
     const awayScore = ev.away_score;
     if (homeScore === null || awayScore === null) continue;
 
-    const homeKey = await findBestMatch(home);
-    const awayKey = await findBestMatch(away);
+    const homeKey = findBestMatch(home);
+    const awayKey = findBestMatch(away);
 
     const homeElo = ELO_DB[homeKey] || 1750;
     const awayElo = ELO_DB[awayKey] || 1750;
@@ -309,8 +289,8 @@ async function main() {
       mostLikelyScore: bsdPred.most_likely_score
     } : null;
 
-    const homeKey = await findBestMatch(homeTeam);
-    const awayKey = await findBestMatch(awayTeam);
+    const homeKey = findBestMatch(homeTeam);
+    const awayKey = findBestMatch(awayTeam);
 
     const homeElo = ELO_DB[homeKey] || 1750;
     const awayElo = ELO_DB[awayKey] || 1750;
