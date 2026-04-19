@@ -9,7 +9,8 @@
     "backtest": "node backtest.js"
   },
   "dependencies": {
-    "node-fetch": "^2.6.9"
+    "node-fetch": "^2.6.9",
+    "fast-fuzzy": "^1.12.0"
   },
   "engines": {
     "node": ">=18"
