@@ -25,6 +25,11 @@ def fetch_and_save_elo():
 
             print(f"CSV 总记录数: {len(df)}, 有效球队数: {len(current_df)}")
 
+            # 如果有效球队数为 0，则保留原有文件不覆盖
+            if len(current_df) == 0:
+                print("⚠️ 警告：抓取到的有效球队数为 0，将保留原有 club_elo.json 不变。")
+                return
+
             elo_dict = dict(zip(current_df['Club'], current_df['Elo']))
 
             print(f"成功获取 {len(elo_dict)} 支球队的 ELO 评分。")
@@ -41,8 +46,8 @@ def fetch_and_save_elo():
                 print("等待5秒后重试...")
                 time.sleep(5)
             else:
-                print(f"所有 {max_retries} 次尝试均失败。")
-                raise
+                print(f"所有 {max_retries} 次尝试均失败，将保留原有数据。")
+                # 不抛出异常，让流程继续
 
 if __name__ == "__main__":
     fetch_and_save_elo()
