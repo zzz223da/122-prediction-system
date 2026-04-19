@@ -17,7 +17,6 @@ def fetch_and_save_elo():
             df = pd.read_csv(StringIO(response.text))
 
             # 过滤：取 To 列为 '9999-12-31' 的记录（表示当前有效）
-            # 如果不存在，则按 Club 分组取 To 最大的那条
             current_df = df[df['To'] == '9999-12-31']
             if current_df.empty:
                 print("未找到 To=9999-12-31 的记录，按 Club 分组取最新日期。")
@@ -26,7 +25,6 @@ def fetch_and_save_elo():
 
             print(f"CSV 总记录数: {len(df)}, 有效球队数: {len(current_df)}")
 
-            # 构建 ELO 字典
             elo_dict = dict(zip(current_df['Club'], current_df['Elo']))
 
             print(f"成功获取 {len(elo_dict)} 支球队的 ELO 评分。")
